@@ -1,0 +1,205 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boxoffice</title>
+        <style>
+   *{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-color: rgb(53,54,58, 100%);
+    color: white;
+    width: 367px;
+    height: 2450px;
+    margin: auto;
+}
+
+h1 img{
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+
+    margin-left: 25%;
+
+}
+
+.movies{
+
+    border-radius: 5px;    
+    border: solid rgba(0, 0, 0, 10%) 1px;
+    background-color: rgba(0, 0, 0, 10%);
+    padding: 10px;
+    width: 309px;
+    height: 2305px;
+    margin:auto;
+}
+
+.movies li{
+
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.movies li img{
+
+    width: 150px;
+    border-radius: 5px;    
+    border: solid rgb(150, 150, 150, 90%) 1px;
+    /* transition: width 350ms; */
+
+}
+
+
+
+.movies li a img:hover{
+
+    animation: movie-anime 1s 1;
+
+}
+
+@keyframes movie-anime{
+
+    0%{ transform: rotate(1deg);}
+    5%{ transform: rotate(2deg);}
+    10%{ transform: rotate(3deg);}
+    15%{ transform: rotate(4deg);}
+    20%{  transform: rotate(5deg);}
+    25%{  transform: rotate(6deg);}
+    30%{ transform: rotate(5deg);}
+    35%{  transform: rotate(4deg);}
+    40%{   transform: rotate(3deg);}
+    45%{   transform: rotate(2deg);}
+    50%{  transform: rotate(1deg);}
+    55%{ transform: rotate(0deg);}
+    60%{ transform: rotate(-1deg);}
+    65%{ transform: rotate(-2deg);}
+    70%{ transform: rotate(-3deg);}
+    75%{  transform: rotate(-4deg);}
+    80%{  transform: rotate(-5deg);}
+    85%{ transform: rotate(-4deg);}
+    90%{  transform: rotate(-3deg);}
+    95%{   transform: rotate(-2deg);}
+    100%{   transform: rotate(-1deg);}
+
+
+}
+        </style>
+    </head>
+    <body>
+        <h1>
+            <img width="48" height="48" src="https://img.icons8.com/deco-color/48/starred-ticket.png" alt="starred-ticket"/> Boxoffice
+        </h1>
+        
+
+        <div class="movies-list">
+            <ul class = "movies">
+                <li>
+
+                        <img title="Scream VI" alt="Scream VI" src="https://a.ltrbxd.com/resized/film-poster/8/3/9/2/4/4/839244-scream-vi-0-500-0-750-crop.jpg?v=07a255685d" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                    <img title="13th Friday" alt="13th Friday" src="https://a.ltrbxd.com/resized/film-poster/4/4/0/4/8/44048-friday-the-13th-0-500-0-750-crop.jpg?v=183923a030" onclick="redirectToMovie(this)"> 
+
+                </li>
+                <li>
+
+                        <img title="Hallowen Kills" alt="Hallowen Kills" src="https://a.ltrbxd.com/resized/film-poster/5/3/7/2/2/8/537228-halloween-kills-0-500-0-750-crop.jpg?v=d46cec8106" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="A Nightmare on Elm Street" alt="A Nightmare on Elm Street" src="https://a.ltrbxd.com/resized/film-poster/3/7/3/6/9/37369-a-nightmare-on-elm-street-0-500-0-750-crop.jpg?v=ce27b2e7d5" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="Child’s Play" alt="Child’s Play" src="https://a.ltrbxd.com/resized/film-poster/4/6/2/7/9/9/462799-child-s-play-0-500-0-750-crop.jpg?v=a198319fa9" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="Texas Chainsaw Massacre" alt="Texas Chainsaw Massacre" src="https://a.ltrbxd.com/resized/film-poster/5/5/8/9/5/6/558956-texas-chainsaw-massacre-0-500-0-750-crop.jpg?v=55135bba7f" onclick="redirectToMovie(this)">
+
+                </li>
+                <!-- ****************************************** -->
+                <li>
+
+                        <img title="The Hills Have Eyes" alt="The Hills Have Eyes" src="https://a.ltrbxd.com/resized/film-poster/4/6/8/2/0/46820-the-hills-have-eyes-0-500-0-750-crop.jpg?v=31498604fb" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="Happy Death Day 2U" alt="Happy Death Day 2U" src="https://a.ltrbxd.com/resized/film-poster/4/4/1/8/5/6/441856-happy-death-day-2u-0-500-0-750-crop.jpg?v=05ac8783bc" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="Wolf Creek 2" alt="Wolf Creek 2" src="https://a.ltrbxd.com/resized/sm/upload/b9/7n/n9/c0/5XkLBtZvnDRLkwc4dUH62gvsvRQ-0-230-0-345-crop.jpg?v=e6b72de006" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="Triangle" alt="Triangle" src="https://a.ltrbxd.com/resized/film-poster/3/5/3/0/7/35307-triangle-0-500-0-750-crop.jpg?v=5b48fb0d4d" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="Wrong Turn 6: Last Resort" alt="Wrong Turn 6: Last Resort" src="https://a.ltrbxd.com/resized/film-poster/1/8/2/6/7/5/182675-wrong-turn-6-last-resort-0-460-0-690-crop.jpg?v=fa760ec979" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+
+                        <img title="House of Wax" alt="House of Wax" src="https://a.ltrbxd.com/resized/film-poster/4/6/5/8/0/46580-house-of-wax-0-460-0-690-crop.jpg?v=504d6d1547" onclick="redirectToMovie(this)">
+
+                </li>
+                <li>
+                        <img title="See No Evil 2" alt="See No Evil 2" src="https://a.ltrbxd.com/resized/film-poster/1/5/9/2/2/8/159228-see-no-evil-2-0-230-0-345-crop.jpg?v=44e296c565" onclick="redirectToMovie(this)">
+                </li>
+                <li>
+                        <img title="Cold Prey III" alt="Cold Prey III" src="https://a.ltrbxd.com/resized/film-poster/9/1/7/8/9178-cold-prey-iii-0-230-0-345-crop.jpg?v=4d52409437" onclick="redirectToMovie(this)">
+                </li>
+                <li>
+                        <img title="Candyman" alt="Candyman" src="https://a.ltrbxd.com/resized/film-poster/4/9/3/4/4/1/493441-candyman-0-230-0-345-crop.jpg?v=6b8fde38f5" onclick="redirectToMovie(this)">
+                </li>
+                <li>
+                        <img title="Trackman" alt="Trackman" src="https://a.ltrbxd.com/resized/film-poster/4/1/2/5/4125-trackman-0-230-0-345-crop.jpg?v=739daaaf12" onclick="redirectToMovie(this)">
+                </li>
+                <li>
+                        <img title="The Strangers: Prey at Night" alt="The Strangers: Prey at Night" src="https://a.ltrbxd.com/resized/film-poster/3/0/7/2/3/0/307230-the-strangers-prey-at-night-0-460-0-690-crop.jpg?v=826449bd3c " onclick="redirectToMovie(this)">
+                </li>
+                <li>
+                        <img title="The Collection" alt="The Collection" src="https://a.ltrbxd.com/resized/sm/upload/no/0q/4j/s3/9d534e6SzjliZDaiR4AwgvKknMf-0-460-0-690-crop.jpg?v=fe01ceaa09" onclick="redirectToMovie(this)">
+                </li>
+                <li>
+                        <img title="I’ll Always Know What You Did Last Summer" alt="I’ll Always Know What You Did Last Summer" src="https://a.ltrbxd.com/resized/film-poster/4/9/6/3/4/49634-i-ll-always-know-what-you-did-last-summer-0-460-0-690-crop.jpg?v=565bae95f1" onclick="redirectToMovie(this)">
+                </li>
+                <li >
+                        <img  title="Jigsaw" alt="Jigsaw" src="https://a.ltrbxd.com/resized/sm/upload/dc/8o/0e/cc/zUbUtxiTdEgWnkXY945gtYYqBZ1-0-460-0-690-crop.jpg?v=1f086cc6f6" onclick="redirectToMovie(this)">
+                </li>
+                <li >
+                    <img  title="Squid Game" alt="Squid Game" src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQTDI_bMtjG5FMrmK7TilFf8000Rs-dYkSk61V6sJBKyGiD3dCw5BbUbP4nFwtou-yLVCfDyqrgBROBLKduc176Z7huyI0Xh9bMSyU__z4bmjp35FhCZx-ljS7TbkgwIuw-YeKwkEMiIUwSLtk1uNmhw-.jpg?r=101" onclick="redirectToMovie(this)">
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            function redirectToMovie(element) {
+                // Get the 'alt' attribute value (movie title)
+                const movieName = element.title;
+                const moviePoster = element.src;
+                // Redirect to the movie page with the movie name as a query parameter
+
+                window.location.href = `moviePage.html?name=${encodeURIComponent(movieName)}&poster=${encodeURIComponent(moviePoster)}`;
+            }
+        </script>
+        
+    </body>
+</html>

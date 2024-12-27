@@ -1,0 +1,102 @@
+<!-- movie1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Movie 1</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(53,54,58, 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+
+        }
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            padding-top: 25.25%; /* 16:9 Aspect Ratio */
+            border-color:#c00;
+
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #c00;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = 'Title'></h1>
+    <div class="video-container">
+        <iframe id = 'MovieURL' width="600" height="480" src="" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+    <button class="back-button" onclick="goBack()">Back to Library</button>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+
+        // Get the query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const videosURLs = 
+        {
+            "Scream VI" : "",
+            "13th Friday" : "",
+            "Hallowen Kills" : "",
+            "A Nightmare on Elm Street" : "",
+            "Child’s Play" : "",
+            "Texas Chainsaw Massacre" : "",
+            "The Hills Have Eyes" : "",
+            "Happy Death Day 2U" : "",
+            "Wolf Creek 2" : "",
+            "Triangle" : "",
+            "Wrong Turn 6: Last Resort" : "",
+            "House of Wax" : "",
+            "See No Evil 2" : "",
+            "Cold Prey III" : "",
+            "Candyman" : "",
+            "Trackman" : "",
+            "The Strangers: Prey at Night" : "",
+            "The Collection" : "",
+            "I’ll Always Know What You Did Last Summer" : "",
+            "Jigsaw" : "",
+            "Squid Game" : "https://dood.work/e/56kc5cfkt3jv"
+
+        };
+
+        const movieName = urlParams.get('name');
+        const moviePoster = urlParams.get('poster');
+
+        // Set the movie title and video
+        document.getElementById('Title').innerText = movieName;
+        document.getElementById('MovieURL').src = videosURLs[movieName] || "https://dood.work/e/bnh0pvrnw274"; // Replace with your actual video URL logic
+        
+    </script>
+</body>
+</html>
